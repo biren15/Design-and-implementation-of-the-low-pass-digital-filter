@@ -1,0 +1,73 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 2
+Design : Filter_IIR
+Version: D-2010.03-SP2
+Date   : Fri Apr 28 14:45:26 2017
+****************************************
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: F3/delay1_reg[27]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: F3/delay2_reg[27]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  F3/delay1_reg[27]/CLK (DFFSR)            0.00      10.00 r
+  F3/delay1_reg[27]/Q (DFFSR)              0.24      10.24 f
+  F3/U70/Y (BUFX2)                         0.45      10.69 f
+  F3/delay2_reg[27]/D (DFFSR)              0.00      10.69 f
+  data arrival time                                  10.69
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  F3/delay2_reg[27]/CLK (DFFSR)            0.00      10.00 r
+  library hold time                       -0.02       9.98
+  data required time                                  9.98
+  -----------------------------------------------------------
+  data required time                                  9.98
+  data arrival time                                 -10.69
+  -----------------------------------------------------------
+  slack (MET)                                         0.71
+
+
+  Startpoint: F3/delay1_reg[28]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: F3/delay2_reg[28]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  F3/delay1_reg[28]/CLK (DFFSR)            0.00      10.00 r
+  F3/delay1_reg[28]/Q (DFFSR)              0.24      10.24 f
+  F3/U68/Y (BUFX2)                         0.45      10.69 f
+  F3/delay2_reg[28]/D (DFFSR)              0.00      10.69 f
+  data arrival time                                  10.69
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  F3/delay2_reg[28]/CLK (DFFSR)            0.00      10.00 r
+  library hold time                       -0.02       9.98
+  data required time                                  9.98
+  -----------------------------------------------------------
+  data required time                                  9.98
+  data arrival time                                 -10.69
+  -----------------------------------------------------------
+  slack (MET)                                         0.71
+
+
+1

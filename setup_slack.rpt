@@ -1,0 +1,323 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 2
+Design : Filter_IIR
+Version: D-2010.03-SP2
+Date   : Fri Apr 28 14:45:12 2017
+****************************************
+
+Operating Conditions: typical   Library: osu018_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: F1/delay1_reg[9]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: F3/delay1_reg[22]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  F1/delay1_reg[9]/CLK (DFFSR)                            0.00      10.00 r
+  F1/delay1_reg[9]/Q (DFFSR)                              0.24      10.24 f
+  F1/U104/Y (BUFX2)                                       0.53      10.77 f
+  F1/mult_55_S2/B[9] (IIR_filter1_DW02_mult_1)            0.00      10.77 f
+  F1/mult_55_S2/U77/Y (AND2X2)                            0.29      11.06 f
+  F1/mult_55_S2/S2_5_8/YS (FAX1)                          0.28      11.34 r
+  F1/mult_55_S2/U357/Y (XOR2X1)                           0.15      11.49 r
+  F1/mult_55_S2/U386/Y (XOR2X1)                           0.16      11.65 r
+  F1/mult_55_S2/U415/Y (XOR2X1)                           0.16      11.81 r
+  F1/mult_55_S2/S2_9_4/YS (FAX1)                          0.29      12.09 r
+  F1/mult_55_S2/U291/Y (XOR2X1)                           0.15      12.24 r
+  F1/mult_55_S2/U320/Y (XOR2X1)                           0.16      12.40 r
+  F1/mult_55_S2/S4_1/YS (FAX1)                            0.29      12.69 r
+  F1/mult_55_S2/U239/Y (XOR2X1)                           0.12      12.81 f
+  F1/mult_55_S2/FS_1/A[11] (IIR_filter1_DW01_add_1)       0.00      12.81 f
+  F1/mult_55_S2/FS_1/U108/Y (NAND2X1)                     0.15      12.96 r
+  F1/mult_55_S2/FS_1/U107/Y (OAI21X1)                     0.05      13.01 f
+  F1/mult_55_S2/FS_1/U2/Y (INVX1)                         0.07      13.08 r
+  F1/mult_55_S2/FS_1/SUM[11] (IIR_filter1_DW01_add_1)     0.00      13.08 r
+  F1/mult_55_S2/PRODUCT[13] (IIR_filter1_DW02_mult_1)     0.00      13.08 r
+  F1/sub_1_root_sub_56_S2/B[2] (IIR_filter1_DW01_sub_1)
+                                                          0.00      13.08 r
+  F1/sub_1_root_sub_56_S2/U21/Y (INVX2)                   0.07      13.15 f
+  F1/sub_1_root_sub_56_S2/U2_2/YC (FAX1)                  0.21      13.37 f
+  F1/sub_1_root_sub_56_S2/U2_3/YC (FAX1)                  0.21      13.58 f
+  F1/sub_1_root_sub_56_S2/U2_4/YC (FAX1)                  0.21      13.79 f
+  F1/sub_1_root_sub_56_S2/U2_5/YC (FAX1)                  0.21      14.01 f
+  F1/sub_1_root_sub_56_S2/U2_6/YC (FAX1)                  0.21      14.22 f
+  F1/sub_1_root_sub_56_S2/U2_7/YC (FAX1)                  0.21      14.43 f
+  F1/sub_1_root_sub_56_S2/U2_8/YC (FAX1)                  0.21      14.64 f
+  F1/sub_1_root_sub_56_S2/U2_9/YC (FAX1)                  0.21      14.86 f
+  F1/sub_1_root_sub_56_S2/U2_10/YC (FAX1)                 0.21      15.07 f
+  F1/sub_1_root_sub_56_S2/U2_11/YC (FAX1)                 0.21      15.28 f
+  F1/sub_1_root_sub_56_S2/U2_12/YC (FAX1)                 0.21      15.50 f
+  F1/sub_1_root_sub_56_S2/U2_13/YC (FAX1)                 0.21      15.71 f
+  F1/sub_1_root_sub_56_S2/U2_14/YC (FAX1)                 0.21      15.92 f
+  F1/sub_1_root_sub_56_S2/U2_15/YC (FAX1)                 0.21      16.14 f
+  F1/sub_1_root_sub_56_S2/U2_16/YC (FAX1)                 0.21      16.35 f
+  F1/sub_1_root_sub_56_S2/U2_17/YC (FAX1)                 0.21      16.56 f
+  F1/sub_1_root_sub_56_S2/U2_18/YC (FAX1)                 0.21      16.77 f
+  F1/sub_1_root_sub_56_S2/U2_19/YC (FAX1)                 0.21      16.99 f
+  F1/sub_1_root_sub_56_S2/U2_20/YC (FAX1)                 0.21      17.20 f
+  F1/sub_1_root_sub_56_S2/U2_21/YS (FAX1)                 0.41      17.61 r
+  F1/sub_1_root_sub_56_S2/DIFF[21] (IIR_filter1_DW01_sub_1)
+                                                          0.00      17.61 r
+  F1/sub_0_root_sub_56_S2/A[21] (IIR_filter1_DW01_sub_0)
+                                                          0.00      17.61 r
+  F1/sub_0_root_sub_56_S2/U2_21/YC (FAX1)                 0.22      17.83 r
+  F1/sub_0_root_sub_56_S2/U2_22/YS (FAX1)                 0.58      18.41 r
+  F1/sub_0_root_sub_56_S2/DIFF[22] (IIR_filter1_DW01_sub_0)
+                                                          0.00      18.41 r
+  F1/add_1_root_add_60_S2/A[22] (IIR_filter1_DW01_add_5)
+                                                          0.00      18.41 r
+  F1/add_1_root_add_60_S2/U1_22/YC (FAX1)                 0.24      18.65 r
+  F1/add_1_root_add_60_S2/U1_23/YS (FAX1)                 0.53      19.18 r
+  F1/add_1_root_add_60_S2/SUM[23] (IIR_filter1_DW01_add_5)
+                                                          0.00      19.18 r
+  F1/U90/Y (INVX2)                                        0.07      19.24 f
+  F1/U89/Y (INVX2)                                        0.34      19.59 r
+  F1/add_0_root_add_60_S2/B[23] (IIR_filter1_DW01_add_4)
+                                                          0.00      19.59 r
+  F1/add_0_root_add_60_S2/U1_23/YS (FAX1)                 0.79      20.37 r
+  F1/add_0_root_add_60_S2/SUM[23] (IIR_filter1_DW01_add_4)
+                                                          0.00      20.37 r
+  F1/out[23] (IIR_filter1)                                0.00      20.37 r
+  F2/in[23] (IIR_filter2)                                 0.00      20.37 r
+  F2/mult_52_S2/A[23] (IIR_filter2_DW02_mult_3)           0.00      20.37 r
+  F2/mult_52_S2/S2_23_2/YS (FAX1)                         0.31      20.68 f
+  F2/mult_52_S2/S2_24_1/YC (FAX1)                         0.24      20.92 f
+  F2/mult_52_S2/S2_25_1/YC (FAX1)                         0.25      21.18 f
+  F2/mult_52_S2/S2_26_1/YC (FAX1)                         0.25      21.43 f
+  F2/mult_52_S2/S2_27_1/YC (FAX1)                         0.25      21.68 f
+  F2/mult_52_S2/S2_28_1/YC (FAX1)                         0.25      21.94 f
+  F2/mult_52_S2/S2_29_1/YC (FAX1)                         0.25      22.19 f
+  F2/mult_52_S2/S2_30_1/YS (FAX1)                         0.27      22.47 r
+  F2/mult_52_S2/U6/Y (XNOR2X1)                            0.15      22.62 r
+  F2/mult_52_S2/U3/Y (XNOR2X1)                            0.31      22.93 r
+  F2/mult_52_S2/PRODUCT[31] (IIR_filter2_DW02_mult_3)     0.00      22.93 r
+  F2/sub_1_root_sub_55_S2/A[20] (IIR_filter2_DW01_sub_1)
+                                                          0.00      22.93 r
+  F2/sub_1_root_sub_55_S2/U2_20/YC (FAX1)                 0.22      23.15 r
+  F2/sub_1_root_sub_55_S2/U2_21/YS (FAX1)                 0.42      23.57 r
+  F2/sub_1_root_sub_55_S2/DIFF[21] (IIR_filter2_DW01_sub_1)
+                                                          0.00      23.57 r
+  F2/sub_0_root_sub_55_S2/A[21] (IIR_filter2_DW01_sub_0)
+                                                          0.00      23.57 r
+  F2/sub_0_root_sub_55_S2/U2_21/YC (FAX1)                 0.22      23.78 r
+  F2/sub_0_root_sub_55_S2/U2_22/YS (FAX1)                 0.58      24.36 r
+  F2/sub_0_root_sub_55_S2/DIFF[22] (IIR_filter2_DW01_sub_0)
+                                                          0.00      24.36 r
+  F2/add_1_root_add_59_S2/A[22] (IIR_filter2_DW01_add_5)
+                                                          0.00      24.36 r
+  F2/add_1_root_add_59_S2/U1_22/YC (FAX1)                 0.24      24.60 r
+  F2/add_1_root_add_59_S2/U1_23/YS (FAX1)                 0.73      25.32 r
+  F2/add_1_root_add_59_S2/SUM[23] (IIR_filter2_DW01_add_5)
+                                                          0.00      25.32 r
+  F2/U68/Y (INVX2)                                        0.07      25.39 f
+  F2/U67/Y (INVX2)                                        0.25      25.65 r
+  F2/add_0_root_add_59_S2/B[23] (IIR_filter2_DW01_add_4)
+                                                          0.00      25.65 r
+  F2/add_0_root_add_59_S2/U1_23/YS (FAX1)                 0.38      26.03 f
+  F2/add_0_root_add_59_S2/SUM[23] (IIR_filter2_DW01_add_4)
+                                                          0.00      26.03 f
+  F2/out[23] (IIR_filter2)                                0.00      26.03 f
+  F3/in[23] (IIR_filter3)                                 0.00      26.03 f
+  F3/mult_52_S2/A[23] (IIR_filter3_DW02_mult_3)           0.00      26.03 f
+  F3/mult_52_S2/S2_23_2/YC (FAX1)                         0.26      26.29 f
+  F3/mult_52_S2/S2_24_2/YC (FAX1)                         0.25      26.54 f
+  F3/mult_52_S2/S2_25_2/YC (FAX1)                         0.25      26.79 f
+  F3/mult_52_S2/S2_26_2/YC (FAX1)                         0.25      27.05 f
+  F3/mult_52_S2/S2_27_2/YC (FAX1)                         0.25      27.30 f
+  F3/mult_52_S2/S2_28_2/YC (FAX1)                         0.25      27.55 f
+  F3/mult_52_S2/S2_29_2/YS (FAX1)                         0.27      27.83 r
+  F3/mult_52_S2/U4/Y (XNOR2X1)                            0.15      27.98 r
+  F3/mult_52_S2/U2/Y (XNOR2X1)                            0.31      28.29 r
+  F3/mult_52_S2/PRODUCT[31] (IIR_filter3_DW02_mult_3)     0.00      28.29 r
+  F3/sub_1_root_sub_55_S2/A[20] (IIR_filter3_DW01_sub_1)
+                                                          0.00      28.29 r
+  F3/sub_1_root_sub_55_S2/U2_20/YC (FAX1)                 0.22      28.51 r
+  F3/sub_1_root_sub_55_S2/U2_21/YS (FAX1)                 0.42      28.93 r
+  F3/sub_1_root_sub_55_S2/DIFF[21] (IIR_filter3_DW01_sub_1)
+                                                          0.00      28.93 r
+  F3/sub_0_root_sub_55_S2/A[21] (IIR_filter3_DW01_sub_0)
+                                                          0.00      28.93 r
+  F3/sub_0_root_sub_55_S2/U2_21/YC (FAX1)                 0.22      29.14 r
+  F3/sub_0_root_sub_55_S2/U2_22/YS (FAX1)                 0.58      29.72 r
+  F3/sub_0_root_sub_55_S2/DIFF[22] (IIR_filter3_DW01_sub_0)
+                                                          0.00      29.72 r
+  F3/delay1_reg[22]/D (DFFSR)                             0.00      29.72 r
+  data arrival time                                                 29.72
+
+  clock CLK (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  F3/delay1_reg[22]/CLK (DFFSR)                           0.00      30.00 r
+  library setup time                                     -0.24      29.76
+  data required time                                                29.76
+  --------------------------------------------------------------------------
+  data required time                                                29.76
+  data arrival time                                                -29.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: F1/delay1_reg[9]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: F3/delay1_reg[23]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  F1/delay1_reg[9]/CLK (DFFSR)                            0.00      10.00 r
+  F1/delay1_reg[9]/Q (DFFSR)                              0.24      10.24 f
+  F1/U104/Y (BUFX2)                                       0.53      10.77 f
+  F1/mult_55_S2/B[9] (IIR_filter1_DW02_mult_1)            0.00      10.77 f
+  F1/mult_55_S2/U77/Y (AND2X2)                            0.29      11.06 f
+  F1/mult_55_S2/S2_5_8/YS (FAX1)                          0.28      11.34 r
+  F1/mult_55_S2/U357/Y (XOR2X1)                           0.15      11.49 r
+  F1/mult_55_S2/U386/Y (XOR2X1)                           0.16      11.65 r
+  F1/mult_55_S2/U415/Y (XOR2X1)                           0.16      11.81 r
+  F1/mult_55_S2/S2_9_4/YS (FAX1)                          0.29      12.09 r
+  F1/mult_55_S2/U291/Y (XOR2X1)                           0.15      12.24 r
+  F1/mult_55_S2/U320/Y (XOR2X1)                           0.16      12.40 r
+  F1/mult_55_S2/S4_1/YS (FAX1)                            0.29      12.69 r
+  F1/mult_55_S2/U239/Y (XOR2X1)                           0.12      12.81 f
+  F1/mult_55_S2/FS_1/A[11] (IIR_filter1_DW01_add_1)       0.00      12.81 f
+  F1/mult_55_S2/FS_1/U108/Y (NAND2X1)                     0.15      12.96 r
+  F1/mult_55_S2/FS_1/U107/Y (OAI21X1)                     0.05      13.01 f
+  F1/mult_55_S2/FS_1/U2/Y (INVX1)                         0.07      13.08 r
+  F1/mult_55_S2/FS_1/SUM[11] (IIR_filter1_DW01_add_1)     0.00      13.08 r
+  F1/mult_55_S2/PRODUCT[13] (IIR_filter1_DW02_mult_1)     0.00      13.08 r
+  F1/sub_1_root_sub_56_S2/B[2] (IIR_filter1_DW01_sub_1)
+                                                          0.00      13.08 r
+  F1/sub_1_root_sub_56_S2/U21/Y (INVX2)                   0.07      13.15 f
+  F1/sub_1_root_sub_56_S2/U2_2/YC (FAX1)                  0.21      13.37 f
+  F1/sub_1_root_sub_56_S2/U2_3/YC (FAX1)                  0.21      13.58 f
+  F1/sub_1_root_sub_56_S2/U2_4/YC (FAX1)                  0.21      13.79 f
+  F1/sub_1_root_sub_56_S2/U2_5/YC (FAX1)                  0.21      14.01 f
+  F1/sub_1_root_sub_56_S2/U2_6/YC (FAX1)                  0.21      14.22 f
+  F1/sub_1_root_sub_56_S2/U2_7/YC (FAX1)                  0.21      14.43 f
+  F1/sub_1_root_sub_56_S2/U2_8/YC (FAX1)                  0.21      14.64 f
+  F1/sub_1_root_sub_56_S2/U2_9/YC (FAX1)                  0.21      14.86 f
+  F1/sub_1_root_sub_56_S2/U2_10/YC (FAX1)                 0.21      15.07 f
+  F1/sub_1_root_sub_56_S2/U2_11/YC (FAX1)                 0.21      15.28 f
+  F1/sub_1_root_sub_56_S2/U2_12/YC (FAX1)                 0.21      15.50 f
+  F1/sub_1_root_sub_56_S2/U2_13/YC (FAX1)                 0.21      15.71 f
+  F1/sub_1_root_sub_56_S2/U2_14/YC (FAX1)                 0.21      15.92 f
+  F1/sub_1_root_sub_56_S2/U2_15/YC (FAX1)                 0.21      16.14 f
+  F1/sub_1_root_sub_56_S2/U2_16/YC (FAX1)                 0.21      16.35 f
+  F1/sub_1_root_sub_56_S2/U2_17/YC (FAX1)                 0.21      16.56 f
+  F1/sub_1_root_sub_56_S2/U2_18/YC (FAX1)                 0.21      16.77 f
+  F1/sub_1_root_sub_56_S2/U2_19/YC (FAX1)                 0.21      16.99 f
+  F1/sub_1_root_sub_56_S2/U2_20/YC (FAX1)                 0.21      17.20 f
+  F1/sub_1_root_sub_56_S2/U2_21/YS (FAX1)                 0.41      17.61 r
+  F1/sub_1_root_sub_56_S2/DIFF[21] (IIR_filter1_DW01_sub_1)
+                                                          0.00      17.61 r
+  F1/sub_0_root_sub_56_S2/A[21] (IIR_filter1_DW01_sub_0)
+                                                          0.00      17.61 r
+  F1/sub_0_root_sub_56_S2/U2_21/YC (FAX1)                 0.22      17.83 r
+  F1/sub_0_root_sub_56_S2/U2_22/YS (FAX1)                 0.58      18.41 r
+  F1/sub_0_root_sub_56_S2/DIFF[22] (IIR_filter1_DW01_sub_0)
+                                                          0.00      18.41 r
+  F1/add_1_root_add_60_S2/A[22] (IIR_filter1_DW01_add_5)
+                                                          0.00      18.41 r
+  F1/add_1_root_add_60_S2/U1_22/YC (FAX1)                 0.24      18.65 r
+  F1/add_1_root_add_60_S2/U1_23/YS (FAX1)                 0.53      19.18 r
+  F1/add_1_root_add_60_S2/SUM[23] (IIR_filter1_DW01_add_5)
+                                                          0.00      19.18 r
+  F1/U90/Y (INVX2)                                        0.07      19.24 f
+  F1/U89/Y (INVX2)                                        0.34      19.59 r
+  F1/add_0_root_add_60_S2/B[23] (IIR_filter1_DW01_add_4)
+                                                          0.00      19.59 r
+  F1/add_0_root_add_60_S2/U1_23/YS (FAX1)                 0.79      20.37 r
+  F1/add_0_root_add_60_S2/SUM[23] (IIR_filter1_DW01_add_4)
+                                                          0.00      20.37 r
+  F1/out[23] (IIR_filter1)                                0.00      20.37 r
+  F2/in[23] (IIR_filter2)                                 0.00      20.37 r
+  F2/mult_52_S2/A[23] (IIR_filter2_DW02_mult_3)           0.00      20.37 r
+  F2/mult_52_S2/S2_23_2/YS (FAX1)                         0.31      20.68 f
+  F2/mult_52_S2/S2_24_1/YC (FAX1)                         0.24      20.92 f
+  F2/mult_52_S2/S2_25_1/YC (FAX1)                         0.25      21.18 f
+  F2/mult_52_S2/S2_26_1/YC (FAX1)                         0.25      21.43 f
+  F2/mult_52_S2/S2_27_1/YC (FAX1)                         0.25      21.68 f
+  F2/mult_52_S2/S2_28_1/YC (FAX1)                         0.25      21.94 f
+  F2/mult_52_S2/S2_29_1/YC (FAX1)                         0.25      22.19 f
+  F2/mult_52_S2/S2_30_1/YS (FAX1)                         0.27      22.47 r
+  F2/mult_52_S2/U6/Y (XNOR2X1)                            0.15      22.62 r
+  F2/mult_52_S2/U3/Y (XNOR2X1)                            0.31      22.93 r
+  F2/mult_52_S2/PRODUCT[31] (IIR_filter2_DW02_mult_3)     0.00      22.93 r
+  F2/sub_1_root_sub_55_S2/A[20] (IIR_filter2_DW01_sub_1)
+                                                          0.00      22.93 r
+  F2/sub_1_root_sub_55_S2/U2_20/YC (FAX1)                 0.22      23.15 r
+  F2/sub_1_root_sub_55_S2/U2_21/YS (FAX1)                 0.42      23.57 r
+  F2/sub_1_root_sub_55_S2/DIFF[21] (IIR_filter2_DW01_sub_1)
+                                                          0.00      23.57 r
+  F2/sub_0_root_sub_55_S2/A[21] (IIR_filter2_DW01_sub_0)
+                                                          0.00      23.57 r
+  F2/sub_0_root_sub_55_S2/U2_21/YC (FAX1)                 0.22      23.78 r
+  F2/sub_0_root_sub_55_S2/U2_22/YS (FAX1)                 0.58      24.36 r
+  F2/sub_0_root_sub_55_S2/DIFF[22] (IIR_filter2_DW01_sub_0)
+                                                          0.00      24.36 r
+  F2/add_1_root_add_59_S2/A[22] (IIR_filter2_DW01_add_5)
+                                                          0.00      24.36 r
+  F2/add_1_root_add_59_S2/U1_22/YC (FAX1)                 0.24      24.60 r
+  F2/add_1_root_add_59_S2/U1_23/YS (FAX1)                 0.73      25.32 r
+  F2/add_1_root_add_59_S2/SUM[23] (IIR_filter2_DW01_add_5)
+                                                          0.00      25.32 r
+  F2/U68/Y (INVX2)                                        0.07      25.39 f
+  F2/U67/Y (INVX2)                                        0.25      25.65 r
+  F2/add_0_root_add_59_S2/B[23] (IIR_filter2_DW01_add_4)
+                                                          0.00      25.65 r
+  F2/add_0_root_add_59_S2/U1_23/YS (FAX1)                 0.38      26.03 f
+  F2/add_0_root_add_59_S2/SUM[23] (IIR_filter2_DW01_add_4)
+                                                          0.00      26.03 f
+  F2/out[23] (IIR_filter2)                                0.00      26.03 f
+  F3/in[23] (IIR_filter3)                                 0.00      26.03 f
+  F3/mult_52_S2/A[23] (IIR_filter3_DW02_mult_3)           0.00      26.03 f
+  F3/mult_52_S2/S2_23_2/YC (FAX1)                         0.26      26.29 f
+  F3/mult_52_S2/S2_24_2/YC (FAX1)                         0.25      26.54 f
+  F3/mult_52_S2/S2_25_2/YC (FAX1)                         0.25      26.79 f
+  F3/mult_52_S2/S2_26_2/YC (FAX1)                         0.25      27.05 f
+  F3/mult_52_S2/S2_27_2/YC (FAX1)                         0.25      27.30 f
+  F3/mult_52_S2/S2_28_2/YC (FAX1)                         0.25      27.55 f
+  F3/mult_52_S2/S2_29_2/YS (FAX1)                         0.27      27.83 r
+  F3/mult_52_S2/U4/Y (XNOR2X1)                            0.15      27.98 r
+  F3/mult_52_S2/U2/Y (XNOR2X1)                            0.31      28.29 r
+  F3/mult_52_S2/PRODUCT[31] (IIR_filter3_DW02_mult_3)     0.00      28.29 r
+  F3/sub_1_root_sub_55_S2/A[20] (IIR_filter3_DW01_sub_1)
+                                                          0.00      28.29 r
+  F3/sub_1_root_sub_55_S2/U2_20/YC (FAX1)                 0.22      28.51 r
+  F3/sub_1_root_sub_55_S2/U2_21/YS (FAX1)                 0.42      28.93 r
+  F3/sub_1_root_sub_55_S2/DIFF[21] (IIR_filter3_DW01_sub_1)
+                                                          0.00      28.93 r
+  F3/sub_0_root_sub_55_S2/A[21] (IIR_filter3_DW01_sub_0)
+                                                          0.00      28.93 r
+  F3/sub_0_root_sub_55_S2/U2_21/YC (FAX1)                 0.22      29.14 r
+  F3/sub_0_root_sub_55_S2/U2_22/YS (FAX1)                 0.58      29.72 r
+  F3/sub_0_root_sub_55_S2/DIFF[22] (IIR_filter3_DW01_sub_0)
+                                                          0.00      29.72 r
+  F3/delay1_reg[23]/D (DFFSR)                             0.00      29.72 r
+  data arrival time                                                 29.72
+
+  clock CLK (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.00      30.00
+  F3/delay1_reg[23]/CLK (DFFSR)                           0.00      30.00 r
+  library setup time                                     -0.24      29.76
+  data required time                                                29.76
+  --------------------------------------------------------------------------
+  data required time                                                29.76
+  data arrival time                                                -29.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1
